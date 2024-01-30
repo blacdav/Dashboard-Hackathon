@@ -1,4 +1,9 @@
-
+import picture from './images/profile.png'
+import icons from './images/document-download.png'
+import upred from './images/trending-upred.svg'
+import ugreen from './images/trending-upgreen.svg'
+import trendred from './images/Group 3red.svg'
+import trendgreen from './images/Group 3green.svg'
 
 
 
@@ -259,47 +264,52 @@ export const Yearly = [
 export const Users = [
     {
         id: 1,
-        img: './images/profile.png',
+        img: picture,
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
         status: "Paid",
+        icon: icons,
         invoice: "View"
     },
     {
         id: 2,
-        img: './images/profile.png',
+        img: picture,
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
         status: "Refund",
+        icon: icons,
         invoice: "View"
     },
     {
         id: 3,
-        img: './images/profile.png',
+        img: picture,
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
         status: "Paid",
+        icon: icons,
         invoice: "View"
     },
     {
         id: 4,
-        img: './images/profile.png',
+        img: picture,
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
         status: "Refund",
+        icon: icons,
         invoice: "View"
     },
     {
         id: 5,
-        img: './images/;profile.png',
+        img: picture,
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
         status: "Paid",
+        icon: icons,
         invoice: "View"
     }
 ]
@@ -308,41 +318,41 @@ export const Analytic = [
     {
         id: 1,
         icon: '',
-        img: '',
+        img: trendgreen,
         text: 'Total Order',
         amount: 350,
         percent: '25.5%',
-        arrow: './images/trending-upred.svg',
+        arrow: ugreen,
         text2: 'vs. previous month'
     },
     {
         id: 2,
         icon: '',
-        img: '',
+        img: trendred,
         text: 'Total Refund',
         amount: 270,
         percent: '25.5%',
-        arrow: './images/trending-upred.svg',
+        arrow: upred,
         text2: 'vs. previous month'
     },
     {
         id: 3,
         icon: '',
-        img: '',
+        img: trendred,
         text: 'Average Sales',
         amount: 1567,
         percent: '25.5%',
-        arrow: './images/trending-upred.svg',
+        arrow: upred,
         text2: 'vs. previous month'
     },
     {
         id: 4,
         icon: '',
-        img: '',
+        img: trendgreen,
         text: 'Total Income',
         amount: 350000,
         percent: '25.5%',
-        arrow: './images/trending-upred.svg',
+        arrow: ugreen,
         text2: 'vs. previous month'
     }
 ]

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Analytic } from '../Data'
-import ared from '../images/trending-upred.svg'
 
 const Analytics = () => {
   return (
@@ -9,15 +8,15 @@ const Analytics = () => {
         {
           Analytic.map((index) => {
             return(
-              <div className='flex flex-col justify-between bg-tertiary border border-light p-2 rounded-lg lg:aspect-square' key={index.id}>
+              <div className='flex flex-col justify-between bg-tertiary border border-light p-2 rounded-lg' key={index.id}>
                 <div className='flex justify-between'>
                   <img src='#' alt="..." />
-                  <img src='#' alt="..." />
+                  <img src={index.img} alt="..." />
                 </div>
                 <p>{index.text}</p>
                 <p className='text-xl font-medium'>${index.amount}</p>
                 <div className='flex justify-between text-xs'>
-                  <p className='flex bg-primary text-light px-1 rounded-full'><img src='#' alt="..." className='mr-1' />{index.percent}</p>
+                  <p className='flex bg-[#34CAA51A] text-primary px-1 rounded-full'><img src={index.arrow} alt="..." className='mr-1' />{index.percent}</p>
                   <p className='text-xs'>{index.text2}</p>
                 </div>
               </div>

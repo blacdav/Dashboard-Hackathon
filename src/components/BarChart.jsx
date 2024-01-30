@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Bar } from 'react-chartjs-2';
-import { Options, Daily } from '../Data';
+import { Daily } from '../Data';
+// import { Options, Daily } from '../Data';
 import { Chart as ChartJS } from 'chart.js/auto';
 
 const BarChart = () => {
@@ -30,8 +31,8 @@ const BarChart = () => {
               borderRadius: 50,
               barThickness: 25,
               backgroundColor: '#34CAA51A',
-              hoverBackgroundColor: '#34CAA5'
-              // height: 70
+              hoverBackgroundColor: '#34CAA5',
+              height: 30
             }]
           }} />
         </div>

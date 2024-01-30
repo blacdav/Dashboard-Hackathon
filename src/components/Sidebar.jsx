@@ -17,9 +17,9 @@ const Sidebar = () => {
 
   return (
     <div className='bg-tertiary flex flex-col pl-2 w-14 lg:w-16 h-screen bg-secondary border-r border-light justify-between z-30 items-start h-90 fixed md:relative' id='togglebar'>
-      <div className='flex flex-col gap-3 items-center mt-16 lg:mt-0'>
-        <img src={icon} alt="..." className="p-3 hidden lg:flex"/>
-        <ul className='grid gap-3'>
+      <div className='flex flex-col gap-3 justify-center mt-16 lg:mt-0'>
+        <img src={icon} alt="..." className="pt-3 hidden lg:flex"/>
+        <ul className='flex flex-col justify-center gap-3'>
             <li><img src={dashboard} alt="..." /></li>
             <li><img src={scaleup} alt="..." /></li>
             <li><img src={profile} alt="..." /></li>

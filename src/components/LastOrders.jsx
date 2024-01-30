@@ -20,12 +20,12 @@ const LastOrders = () => {
 
       {Users.map((user) => {
         return(
-          <div className='grid grid-cols-6 border-t border-light text-xs lg:text-base gap-1 p-0 lg:p-3'  key={user.id}>
-            <p className='col-span-2 flex'><img src={user.img} alt="." width={20} height={20} className='mr-2' /> {user.name} </p>
-            <p className=''> {user.date} </p>
+          <div className='grid grid-cols-6 border-t border-light text-xs lg:text-base gap-2 p-0 lg:py-3 justify-center items-center'  key={user.id}>
+            <p className='col-span-2 flex items-center'><img src={user.img} alt="." className='mr-2' /> {user.name} </p>
+            <p> {user.date} </p>
             <p> {user.amount} </p>
-            <p className='text-center'> {user.status} </p>
-            <p><img src="#" alt="..." /> {user.invoice} </p>
+            <p className=''> {user.status} </p>
+            <p className='flex'><img src={user.icon} alt="..." className='w-5 h-5 mr-1' /> {user.invoice} </p>
           </div>
         )
       })}

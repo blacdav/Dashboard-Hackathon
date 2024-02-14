@@ -53,19 +53,19 @@ const BarChart = () => {
                 height: 30,
               }]
             }} />
-            ||
-            <Bar data={{
-              labels: Monthly.map((data) => data.month),
-              datasets: [{
-                label: "$",
-                data: Monthly.map((data) => `${data.userGain}`),
-                borderRadius: 50,
-                barThickness: 25,
-                backgroundColor: '#34CAA51A',
-                hoverBackgroundColor: '#34CAA5',
-                height: 30,
-              }]
-            }} />
+            // :
+            // <Bar data={{
+            //   labels: Monthly.map((data) => data.month),
+            //   datasets: [{
+            //     label: "$",
+            //     data: Monthly.map((data) => `${data.userGain}`),
+            //     borderRadius: 50,
+            //     barThickness: 25,
+            //     backgroundColor: '#34CAA51A',
+            //     hoverBackgroundColor: '#34CAA5',
+            //     height: 30,
+            //   }]
+            // }} />
             // :
             // <Bar data={{
             //   labels: Yearly.map((data) => data.year),

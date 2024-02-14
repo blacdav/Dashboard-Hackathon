@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Search from '../images/Seacrh.svg'
 import bell from '../images/solar_bell-outline.svg'
 import icon from '../images/Vectorlogo.svg'
 import menu from '../images/Vectormobile menu.svg'
 
 const Header = () => {
+  // const [showBar, setShowBar] = useState(false);
+  // const toggleShow = () => {
+  //   setShowBar(!showBar);
+  // }
   return (
     <div className='bg-tertiary border-b border-light h-[10%]'>
       <div className='flex justify-between bg-blue-400 items-center p-4'>
@@ -12,7 +16,7 @@ const Header = () => {
           <img src={icon} alt="..." className="block lg:hidden w-8 mr-2"/>
           <h1 className='text-xl font-bold'>Dashboard</h1>
         </div>
-        <img src={menu} alt="..." className='block lg:hidden' />
+        <img src={menu} alt="..." className='block lg:hidden' /* onClick={togglesShow} */ />
         <div className='hidden lg:flex'>
             <div className='flex bg-tertiary border border-light rounded-full p-1'>
                 <img src={Search} alt="..." className='mx-2' />

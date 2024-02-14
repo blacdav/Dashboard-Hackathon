@@ -16,10 +16,10 @@ const Sidebar = () => {
   
 
   return (
-    <div className='bg-tertiary flex flex-col pl-2 w-14 lg:w-16 h-screen bg-secondary border-r border-light justify-between z-30 items-start h-90 fixed md:relative' id='togglebar'>
+    <div className={`bg-tertiary flex flex-col pl-2 w-14 lg:w-16 h-screen bg-secondary border-r border-light justify-between z-30 items-start h-90 fixed md:relative`} id='togglebar'>
       <div className='flex flex-col gap-3 justify-center mt-16 lg:mt-0'>
         <img src={icon} alt="..." className="pt-3 hidden lg:flex"/>
-        <ul className='flex flex-col justify-center gap-3'>
+        <ul className='flex flex-col justify-center gap-3 cursor-pointer'>
             <li><img src={dashboard} alt="..." /></li>
             <li><img src={scaleup} alt="..." /></li>
             <li><img src={profile} alt="..." /></li>
@@ -27,12 +27,12 @@ const Sidebar = () => {
             <li><img src={disc} alt="..." /></li>
             <li><img src={info} alt="..." /></li>
         </ul>
-        <ul className='bg-tertiary p-1 rounded-full grid gap-3'>
+        <ul className='bg-tertiary p-1 rounded-full grid gap-3 cursor-pointer'>
             <li><img src={bright} alt="..." className='bg-primary rounded-full p-1' /></li>
             <li><img src={dark} alt="..." className='bg-light rounded-full p-1' /></li>
         </ul>
       </div>
-      <ul className='flex flex-col gap-3 items-center lg:mb-3'>
+      <ul className='flex flex-col gap-3 items-center lg:mb-3 cursor-pointer'>
         <li><img src={login} alt="..." /></li>
         <li><img src={setting} alt="..." /></li>
         <li><img src={logout} alt="..." /></li>

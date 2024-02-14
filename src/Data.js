@@ -76,7 +76,7 @@ export const Weekly = [
     {
         id: 1,
         week: 'Week 01',
-        userGain: 6000,
+        userGain: 35000,
     },
     {
         id: 2,
@@ -86,7 +86,7 @@ export const Weekly = [
     {
         id: 3,
         week: 'Week 03',
-        userGain: 3500,
+        userGain: 45000,
     },
     {
         id: 4,
@@ -96,17 +96,17 @@ export const Weekly = [
     {
         id: 5,
         week: 'Week 05',
-        userGain: 9000,
+        userGain: 40000,
     },
     {
         id: 6,
         week: 'Week 06',
-        userGain: 45000,
+        userGain: 35000,
     },
     {
         id: 7,
         week: 'Week 07',
-        userGain: 9000,
+        userGain: 39000,
     },
     {
         id: 8,
@@ -121,7 +121,7 @@ export const Weekly = [
     {
         id: 10,
         week: 'Week 10',
-        userGain: 4000,
+        userGain: 9000,
     },
     {
         id: 11,

@@ -8,7 +8,7 @@ const Analytics = () => {
         {
           Analytic.map((index) => {
             return(
-              <div className='flex flex-col justify-between bg-tertiary border border-light p-2 rounded-lg' key={index.id}>
+              <div className='flex flex-col justify-between bg-tertiary border border-light p-2 rounded-lg lg:h-36' key={index.id}>
                 <div className='flex justify-between'>
                   <img src='#' alt="..." />
                   <img src={index.img} alt="..." />

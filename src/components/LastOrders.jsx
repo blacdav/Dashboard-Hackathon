@@ -3,7 +3,7 @@ import { Users } from '../Data'
 
 const LastOrders = () => {
   return (
-    <div className='p-5 bg-tertiary border border-light ml-5 mr-5 lg:mr-0 mb-0 lg:mb-5 rounded-lg'>
+    <div className='p-5 bg-tertiary border border-light mx-5 lg:mr-0 mb-0 lg:mb-5 rounded-lg'>
       <div>
         <div className='flex justify-between'>
             <h1 className='text-xs lg:text-lg font-semibold'>Last Orders</h1>

@@ -4,14 +4,16 @@ import BarChart from './components/BarChart';
 import Sidebar from './components/Sidebar';
 import LastOrders from './components/LastOrders';
 import Analytics from './components/Analytics';
-import TopPlatform from './components/TopPlatform'
+import TopPlatform from './components/TopPlatform';
 
 function App() {
   
   return (
     <div className="App bg-secondary w-screen">        
       <div className='flex h-screen w-screen'>
-        <Sidebar />
+        <div className='hidden lg:block'>
+        <Sidebar /> 
+        </div>
         <div className='w-screen'>
           <Header />
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-6 h-[90%] overflow-y-scroll'>

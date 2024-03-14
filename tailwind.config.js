@@ -12,7 +12,11 @@ module.exports = {
       secondary: '#34CAA50',
       tertiary: '#FAFAFA',
       light: '#EBECF2',
-      bar: '#34CAA500'
+      bar: '#34CAA500',
+      purple: 'purple',
+      blue: 'blue',
+      yellow: 'yellow',
+      red: 'red'
     },
     extend: {
       

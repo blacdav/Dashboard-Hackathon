@@ -13,8 +13,6 @@ import logout from '../images/Frame 12logout.svg'
 import login from '../images/arrow-rightarrowright.svg'
 
 const Sidebar = () => {
-  
-
   return (
     <div className={`bg-tertiary flex flex-col pl-2 w-14 lg:w-16 h-screen bg-secondary border-r border-light justify-between z-30 items-start h-90 fixed md:relative`} id='togglebar'>
       <div className='flex flex-col gap-3 justify-center mt-16 lg:mt-0'>

@@ -8,18 +8,19 @@ import Sidebar from './Sidebar'
 const Header = () => {
   const [showBar, setShowBar] = useState(false);
   
-  const toggleShow = () => {
-    setShowBar(!showBar);
-  }
+  // const toggleShow = () => {
+  //   setShowBar(!showBar);
+  // }
   
   return (
-    <div className='bg-tertiary border-b border-light h-[10%]'>
+    <>
+    <div className='bg-tertiary border-b border-light h-[10%] grid items-center'>
       <div className='flex justify-between bg-blue-400 items-center p-4'>
         <div className='flex justify-between'>
           <img src={icon} alt="..." className="block lg:hidden w-8 mr-2"/>
           <h1 className='text-xl font-bold'>Dashboard</h1>
         </div>
-        <img src={menu} alt="..." className='block lg:hidden' onClick={toggleShow} /> {showBar ? <Sidebar /> : null }
+        <img src={menu} alt="..." className='block lg:hidden' onClick={() => setShowBar(!showBar)} />
         <div className='hidden lg:flex'>
             <div className='flex bg-tertiary border border-light rounded-full p-1'>
                 <img src={Search} alt="..." className='mx-2' />
@@ -42,6 +43,8 @@ const Header = () => {
         </div>
       </div>
     </div>
+    <Sidebar visible={showBar} />
+    </>
   )
 }
 

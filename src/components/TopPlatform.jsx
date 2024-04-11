@@ -4,7 +4,7 @@ import { Platforms } from '../Data'
 
 const TopPlatform = () => {
   
-  const [style, useStyle] = useState();
+  // const [style, useStyle] = useState();
 
   return (
     <div className='bg-tertiary p-5 rounded-lg border border-light mb-5 ml-5 lg:ml-0 -mr-5 lg:mr-5'>
@@ -20,7 +20,7 @@ const TopPlatform = () => {
             {/* <div className='my-2 w-full h-2 bg-light rounded-full'>
               <div className='w-[50%] h-2 bg-blue rounded-full'></div>
             </div> */}
-            <progress id='file' value={index.percent * 3.5} max={100} className='h- w-full rounded-full bg-primary'>70</progress>
+            <progress id='file' value={index.percent * 3.5} max={100} className='h-3 w-full bg-primary rounded-full'>70</progress>
             <div className='flex justify-between text-xs'>
               <p>${index.price}</p>
               <p>+{index.percent}%</p>

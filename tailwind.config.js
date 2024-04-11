@@ -16,10 +16,12 @@ module.exports = {
       purple: 'purple',
       blue: 'blue',
       yellow: 'yellow',
-      red: 'red'
+      red: 'red',
+      black: '#282C35',
+      dark: '#36454F'
     },
     extend: {
-      
+
     },
   },
   plugins: [],

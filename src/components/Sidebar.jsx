@@ -13,7 +13,7 @@ import logout from "../images/Frame 12logout.svg";
 import login from "../images/arrow-rightarrowright.svg";
 
 const Sidebar = ({ visible, onChange }) => {
-  // const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(true)
   return (
     <div
       className={`${
@@ -45,7 +45,7 @@ const Sidebar = ({ visible, onChange }) => {
           </li>
         </ul>
         <ul className={`${theme ? 'bg-light' : 'bg-dark'} justify-center p-1 w-fit mr-2 rounded-full grid gap-3 cursor-pointer`}>
-          <li onClick={() => (true)} className="w-full items-center h-8 flex justify-center">
+          <li onClick={() => setTheme(true)} className="w-full items-center h-8 flex justify-center">
             <img
               src={bright}
               alt="..."

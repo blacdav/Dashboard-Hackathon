@@ -5,7 +5,7 @@ import icon from '../images/Vectorlogo.svg'
 import menu from '../images/Vectormobile menu.svg'
 import Sidebar from './Sidebar'
 
-const Header = () => {
+const Header = ({ changeTheme }) => {
   const [showBar, setShowBar] = useState(false);
   
   // const toggleShow = () => {
@@ -14,7 +14,7 @@ const Header = () => {
   
   return (
     <>
-    <div className='bg-tertiary border-b border-light h-[10%] grid items-center'>
+    <div className={`${!changeTheme ? 'bg-black text-secondary' : 'bg-tertiary text-black'} bg-tertiary border-b border-light h-[10%] grid items-center`}>
       <div className='flex justify-between bg-blue-400 items-center p-4'>
         <div className='flex justify-between'>
           <img src={icon} alt="..." className="block lg:hidden w-8 mr-2"/>

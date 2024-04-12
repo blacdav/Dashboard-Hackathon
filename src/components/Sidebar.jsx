@@ -12,11 +12,11 @@ import setting from "../images/Frame 12setting.png";
 import logout from "../images/Frame 12logout.svg";
 import login from "../images/arrow-rightarrowright.svg";
 
-const Sidebar = ({ visible, onChange }) => {
-  const [theme, setTheme] = useState(true)
+const Sidebar = ({ visible, theme, setTheme }) => {
+  // const [theme, setTheme] = useState(true)
   return (
     <div
-      className={`${
+      className={`block ${
         !visible ? "hidden" : ""
       }
       ${!theme ? 'bg-black text-secondary' : 'bg-tertiary text-black'} flex flex-col pl-2 w-14 lg:w-16 h-[90%] border-r border-light justify-between z-30 items-start fixed md:absolute md:bottom-0`}
@@ -45,14 +45,14 @@ const Sidebar = ({ visible, onChange }) => {
           </li>
         </ul>
         <ul className={`${theme ? 'bg-light' : 'bg-dark'} justify-center p-1 w-fit mr-2 rounded-full grid gap-3 cursor-pointer`}>
-          <li onClick={() => setTheme(true)} className="w-full items-center h-8 flex justify-center">
+          <li onClick={() => setTheme(!theme)} className="w-full items-center h-8 flex justify-center">
             <img
               src={bright}
               alt="..."
               className={`${theme ? 'bg-primary' : 'bg-black'} rounded-full p-1`}
             />
           </li>
-          <li onClick={() => setTheme(false)} className="w-full items-center h-8 flex justify-center">
+          <li onClick={() => setTheme(theme)} className="w-full items-center h-8 flex justify-center">
             <img src={dark} alt="..." className={`${!theme ? 'bg-light' : 'bg-dark'} rounded-full p-1`} />
           </li>
         </ul>

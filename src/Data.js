@@ -75,62 +75,62 @@ export const Daily = [
 export const Weekly = [
     {
         id: 1,
-        week: 'Week 01',
+        week: 'Wk 01',
         userGain: 35000,
     },
     {
         id: 2,
-        week: 'Week 02',
+        week: 'Wk 02',
         userGain: 20000,
     },
     {
         id: 3,
-        week: 'Week 03',
+        week: 'Wk 03',
         userGain: 45000,
     },
     {
         id: 4,
-        week: 'Week 04',
+        week: 'Wk 04',
         userGain: 27000,
     },
     {
         id: 5,
-        week: 'Week 05',
+        week: 'Wk 05',
         userGain: 40000,
     },
     {
         id: 6,
-        week: 'Week 06',
+        week: 'Wk 06',
         userGain: 35000,
     },
     {
         id: 7,
-        week: 'Week 07',
+        week: 'Wk 07',
         userGain: 39000,
     },
     {
         id: 8,
-        week: 'Week 08',
+        week: 'Wk 08',
         userGain: 27000,
     },
     {
         id: 9,
-        week: 'Week 09',
+        week: 'Wk 09',
         userGain: 33000,
     },
     {
         id: 10,
-        week: 'Week 10',
+        week: 'Wk 10',
         userGain: 9000,
     },
     {
         id: 11,
-        week: 'Week 11',
+        week: 'Wk 11',
         userGain: 30000,
     },
     {
         id: 12,
-        week: 'Week 12',
+        week: 'Wk 12',
         userGain: 26000,
     }
 ]

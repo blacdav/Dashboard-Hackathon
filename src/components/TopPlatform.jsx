@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { Platforms } from '../Data'
 // import form from '../images/'
 
-const TopPlatform = () => {
+const TopPlatform = ({display}) => {
   
   // const [style, useStyle] = useState();
 
   return (
-    <div className='bg-tertiary p-5 rounded-lg border border-light mb-5 ml-5 lg:ml-0 -mr-5 lg:mr-5'>
+    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} p-5 rounded-lg border border-light mb-5 ml-5 lg:ml-0 -mr-5 lg:mr-5`}>
       <div className='flex justify-between mb-4'>
         <h1>Top Platform</h1>
         <p className='text-primary'>See All</p>

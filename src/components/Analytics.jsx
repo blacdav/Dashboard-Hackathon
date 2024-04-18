@@ -1,14 +1,14 @@
 import React from 'react'
 import { Analytic } from '../Data'
 
-const Analytics = () => {
+const Analytics = ({display}) => {
   return (
     <div className=''>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-3 my-0 lg:my-5 -mr-5 lg:mr-5 ml-5 lg:ml-0'>
+      <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} grid grid-cols-1 md:grid-cols-2 gap-3 my-0 lg:my-5 -mr-5 lg:mr-5 ml-5 lg:ml-0`}>
         {
           Analytic.map((index) => {
             return(
-              <div className='flex flex-col justify-between bg-tertiary border border-light p-2 rounded-lg lg:h-36' key={index.id}>
+              <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} flex flex-col justify-between border border-light p-2 rounded-lg lg:h-36`} key={index.id}>
                 <div className='flex justify-between'>
                   <img src='#' alt="..." />
                   <img src={index.img} alt="..." />

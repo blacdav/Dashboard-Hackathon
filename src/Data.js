@@ -2,11 +2,12 @@ import picture from './images/profile.png'
 import icons from './images/document-download.png'
 import upred from './images/trending-upred.svg'
 import ugreen from './images/trending-upgreen.svg'
-import trendred from './images/Group 3red.svg'
-import trendgreen from './images/Group 3green.svg'
-
-
-
+import trendred from './images/3red.svg'
+import trendgreen from './images/3green.svg'
+import order from './images/box-tick.svg'
+import refund from './images/3d-rotate.svg'
+import sales from './images/shopping-cart.svg'
+import income from './images/coin.svg'
 
 
 export const Daily = [
@@ -317,7 +318,7 @@ export const Users = [
 export const Analytic = [
     {
         id: 1,
-        icon: '',
+        icon: order,
         img: trendgreen,
         text: 'Total Order',
         amount: 350,
@@ -327,7 +328,7 @@ export const Analytic = [
     },
     {
         id: 2,
-        icon: '',
+        icon: refund,
         img: trendred,
         text: 'Total Refund',
         amount: 270,
@@ -337,7 +338,7 @@ export const Analytic = [
     },
     {
         id: 3,
-        icon: '',
+        icon: sales,
         img: trendred,
         text: 'Average Sales',
         amount: 1567,
@@ -347,7 +348,7 @@ export const Analytic = [
     },
     {
         id: 4,
-        icon: '',
+        icon: income,
         img: trendgreen,
         text: 'Total Income',
         amount: 350000,

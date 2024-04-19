@@ -1,23 +1,22 @@
 import React from "react";
 // import icon from "../images/Vectorlogo.svg";
-import dashboard from "../images/Frame 12dashboard.svg";
+import dashboard from "../images/dashboard.svg";
 import scaleup from "../images/trend-upd2.svg";
 import profile from "../images/profile-2user.svg";
-import box from "../images/Frame 12box.svg";
+import box from "../images/box.svg";
 import disc from "../images/discount-shape.svg";
-import bright from "../images/Grouplight.svg";
-import dark from "../images/Vectordark.svg";
+import bright from "../images/light.svg";
+import dark from "../images/dark.svg";
 import info from "../images/info-circled7.svg";
-import setting from "../images/Frame 12setting.png";
-import logout from "../images/Frame 12logout.svg";
+import setting from "../images/setting.png";
+import logout from "../images/logout.svg";
 import login from "../images/arrow-rightarrowright.svg";
 
 const Sidebar = ({ visible, display, setDisplay }) => {
-  // const [theme, setTheme] = useState(true)
   return (
     <>
     <div
-      className={`${visible ? "hidden lg:flex lg:bg-black" : "" || display ? 'bg-tertiary text-black' : 'bg-black text-tertiary'} flex flex-col w-14 lg:w-16 h-[90%] border-r border-light justify-between z-30 items-start absolute bottom-0`}
+      className={`${visible ? "hidden lg:flex" : ""} ${display ? 'bg-tertiary text-black' : 'bg-black text-tertiary'} flex flex-col w-14 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute bottom-0`}
       id="togglebar"
     >
       <div className="flex flex-col w-full gap-3 items-end mt-1 lg:mt-0">

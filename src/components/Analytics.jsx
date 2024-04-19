@@ -10,7 +10,7 @@ const Analytics = ({display}) => {
             return(
               <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} flex flex-col justify-between border border-light p-2 rounded-lg lg:h-36`} key={index.id}>
                 <div className='flex justify-between'>
-                  <img src='#' alt="..." />
+                  <img src={index.icon} alt="..." />
                   <img src={index.img} alt="..." />
                 </div>
                 <p>{index.text}</p>

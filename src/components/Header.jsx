@@ -3,10 +3,8 @@ import Search from '../images/Seacrh.svg'
 import bell from '../images/solar_bell-outline.svg'
 import icon from '../images/logo.svg'
 import menu from '../images/menu.svg'
-// import Sidebar from './Sidebar'
 
 const Header = ({visible, setVisible, display}) => {
-  // const [showBar, setShowBar] = useState(false);
   
   return (
     <>
@@ -39,7 +37,6 @@ const Header = ({visible, setVisible, display}) => {
         </div>
       </div>
     </div>
-    {/* <Sidebar visible={showBar} /> */}
     </>
   )
 }

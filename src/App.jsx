@@ -14,9 +14,7 @@ function App() {
   return (
     <div className={`${theme ? 'bg-tertiary text-black' : 'bg-black text-secondary'} App pb-5 h-screen w-screen`}>
       <div className='flex h-screen w-screen'>
-        <div className='hidden lg:block'>
           <Sidebar visible={showBar} display={theme} setDisplay={setTheme} />
-        </div>
         <div className='w-screen'>
           <Header visible={showBar} setVisible={setShowBar} display={theme} />
           <div className='grid grid-cols-1 gap-5 lg:grid-cols-6 h-[93%] lg:h-[90%] overflow-y-scroll'>

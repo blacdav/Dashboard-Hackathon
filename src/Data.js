@@ -289,7 +289,7 @@ export const Users = [
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
-        status: "Paid",
+        status: "Pending",
         icon: icons,
         invoice: "View"
     },
@@ -299,7 +299,7 @@ export const Users = [
         name: "David David",
         date: "Nov 15, 2023",
         amount: "$10,000",
-        status: "Refund",
+        status: "Failed",
         icon: icons,
         invoice: "View"
     },

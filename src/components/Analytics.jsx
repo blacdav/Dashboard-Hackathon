@@ -16,7 +16,7 @@ const Analytics = ({display}) => {
                 <p>{index.text}</p>
                 <p className='text-xl font-medium'>${index.amount}</p>
                 <div className='flex justify-between text-xs'>
-                  <p className='flex bg-[#34CAA51A] text-primary px-1 rounded-full'><img src={index.arrow} alt="..." className='mr-1' />{index.percent}</p>
+                  <p className={`flex text-primary px-1 rounded-full`}><img src={index.arrow} alt="..." className='mr-1' />{index.percent}</p>
                   <p className='text-xs'>{index.text2}</p>
                 </div>
               </div>

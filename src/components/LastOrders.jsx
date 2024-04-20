@@ -9,26 +9,29 @@ const LastOrders = ({display}) => {
             <h1 className='text-xs lg:text-lg font-semibold'>Last Orders</h1>
             <p className='text-primary'>See All</p>
         </div>
-        <div className='grid grid-cols-6 gap-2 text-xs lg:text-base mr-4'>
-            <p className='col-span-2'>Name</p>
-            <p className=''>Date</p>
-            <p>Amount</p>
-            <p className='ml-1'>Status</p>
-            <p>Invoice</p>
-        </div>
+        <table className='w-full'>
+          <thead className='grid grid-cols-6 gap-5 text-left text-xs lg:text-base mr-4'>
+            <th className='col-span-2'>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Invoice</th>
+          </thead>
+          {
+            Users.map((user, i) => {
+              return(
+                <tbody className='grid grid-cols-6 border-t border-light text-xs lg:text-base gap-2 p-0 lg:py-3 justify-center items-center' key={i}>
+                  <td className='flex col-span-2 items-center'><img src={user.img} alt="." className='mr-2 w-7' /> {user.name}</td>
+                  <td className='flex'>{user.date}</td>
+                  <td>{user.amount}</td>
+                  <td className={`${user.status === 'Refund' ? 'text-blue' : user.status === 'Pending' ? 'text-orange' : user.status === 'Paid' ? 'text-primary' : 'text-red'}`}>{user.status}</td>
+                  <td className='flex'><img src={user.icon} alt="..." className='w-5 h-5 mr-1' /> {user.invoice}</td>
+                </tbody>
+              )
+            })
+          }
+        </table>
       </div>
-
-      {Users.map((user) => {
-        return(
-          <div className='grid grid-cols-6 border-t border-light text-xs lg:text-base gap-2 p-0 lg:py-3 justify-center items-center'  key={user.id}>
-            <p className='col-span-2 flex items-center'><img src={user.img} alt="." className='mr-2' /> {user.name} </p>
-            <p> {user.date} </p>
-            <p> {user.amount} </p>
-            <p className=''> {user.status} </p>
-            <p className='flex'><img src={user.icon} alt="..." className='w-5 h-5 mr-1' /> {user.invoice} </p>
-          </div>
-        )
-      })}
     </div>
   );
 }

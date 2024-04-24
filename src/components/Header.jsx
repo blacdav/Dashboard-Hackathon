@@ -11,7 +11,7 @@ const Header = ({visible, setVisible, display}) => {
     <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} border-b border-light h-[10%] grid items-center`}>
       <div className='flex justify-between bg-blue-400 items-center p-4'>
         <div className='flex justify-between'>
-          <img src={icon} alt="..." className={`flex w-8 mr-2`}/>
+          <img src={icon} alt="..." className={`flex lg:hidden w-8 mr-2`}/>
           <h1 className='text-xl font-bold'>Dashboard</h1>
         </div>
         <img src={menu} alt="..." className={`${display ? 'fill-tertiary' : ''} block lg:hidden`} onClick={() => setVisible(!visible)} />

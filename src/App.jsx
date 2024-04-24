@@ -9,7 +9,7 @@ import TopPlatform from './components/TopPlatform';
 
 function App() {
   const [showBar, setShowBar] = useState(true);
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(!true)
 
   return (
     <div className={`${theme ? 'bg-tertiary text-black' : 'bg-black text-secondary'} App pb-5 h-screen w-screen`}>

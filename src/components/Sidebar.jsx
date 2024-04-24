@@ -1,5 +1,5 @@
 import React from "react";
-// import icon from "../images/Vectorlogo.svg";
+import icon from "../images/logo.svg";
 import dashboard from "../images/dashboard.svg";
 import scaleup from "../images/trend-upd2.svg";
 import profile from "../images/profile-2user.svg";
@@ -16,11 +16,11 @@ const Sidebar = ({ visible, display, setDisplay }) => {
   return (
     <>
     <div
-      className={`${visible ? "hidden lg:flex" : ""} ${display ? 'bg-tertiary text-black' : 'bg-black text-tertiary'} flex flex-col w-14 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute bottom-0`}
+      className={`${visible ? "hidden lg:flex" : ""} ${display ? 'bg-tertiary text-black' : 'bg-black text-tertiary'} flex flex-col w-14 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute lg:relative bottom-0`}
       id="togglebar"
     >
       <div className="flex flex-col w-full gap-3 items-end mt-1 lg:mt-0">
-        {/* <img src={icon} alt="..." className="pt-5 flex lg:hidden" /> */}
+        <img src={icon} alt="..." className="pt-5 mr-2 hidden lg:flex" />
         <ul className="flex flex-col items-center justify-center gap-3 cursor-pointer w-full">
           <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
             <img src={dashboard} alt="..." width={40} className="h-8 w-8" />

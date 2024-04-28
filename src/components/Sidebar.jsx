@@ -46,16 +46,16 @@ const Sidebar = ({ visible, display, setDisplay }) => {
             <span className="flex lg:hidden">Information</span>
           </li>
         </ul>
-        <ul className={`${display ? 'bg-light' : 'bg-dark'} justify-center p-1 w-fit mr-2 rounded-full grid gap-3 cursor-pointer`}>
+        <ul className={`${display ? 'bg-light' : 'bg-dark'} justify-center p-1 w-fit mr-3 rounded-full grid gap-3 cursor-pointer`}>
           <li onClick={() => setDisplay(true)} className="w-full items-center h-8 flex justify-center">
             <img
               src={bright}
               alt="..."
-              className={`${display ? 'bg-primary' : 'bg-black'} rounded-full p-1`}
+              className={`${display ? 'bg-primary translate-y-10 duration-500' : 'bg-black -translate-y-0 duration-500'} rounded-full p-1`}
             />
           </li>
           <li onClick={() => setDisplay(false)} className="w-full items-center h-8 flex justify-center">
-            <img src={dark} alt="..." className={`${display ? 'bg-dark' : 'bg-primary'} rounded-full p-1`} />
+            <img src={dark} alt="..." className={`${display ? 'bg-dark -translate-y-10 duration-500' : 'bg-primary translate-y-0 duration-500'} rounded-full p-1`} />
           </li>
         </ul>
       </div>

@@ -27,5 +27,4 @@ const TopPlatform = ({display}) => {
   )
 }
 
-// ${index.id === 1 ? 'bg-blue' : index.id === 2 ? 'bg-primary' : index.id === 3 ? 'bg-yellow' : 'bg-red'}
 export default TopPlatform

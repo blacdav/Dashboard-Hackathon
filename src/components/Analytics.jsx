@@ -8,7 +8,7 @@ const Analytics = ({display}) => {
         {
           Analytic.map((index) => {
             return(
-              <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in hover:scale-125 delay-150 flex flex-col justify-between border border-light p-5 lg:p-2 rounded-lg h-44 lg:h-36`} key={index.id}>
+              <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in lg:hover:scale-125 delay-150 flex flex-col justify-between border border-light p-5 lg:p-2 rounded-lg h-44 lg:h-36`} key={index.id}>
                 <div className='flex justify-between'>
                   <img src={index.icon} alt="..." />
                   <img src={index.img} alt="..." />

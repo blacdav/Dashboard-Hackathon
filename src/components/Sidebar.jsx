@@ -16,7 +16,7 @@ const Sidebar = ({ visible, display, setDisplay }) => {
   return (
     <>
     <div
-      className={`${visible ? "hidden lg:flex" : "transition ease-in delay-150"} ${display ? 'bg-tertiary text-black transition ease-in delay-150' : 'bg-black text-tertiary'} flex flex-col w-1/2 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute lg:relative bottom-0`}
+      className={`${visible ? "hidden lg:flex transition ease-out delay-150" : "transition ease-in delay-150"} ${display ? 'bg-tertiary text-black transition ease-in delay-150' : 'bg-black text-tertiary'} flex flex-col w-1/2 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute lg:relative bottom-0`}
     >
       <div className="flex flex-col w-full gap-3 items-end pl-5 lg:pl-0 mt-1 lg:mt-0">
         <img src={icon} alt="..." className="pt-5 mr-2 hidden lg:flex" />

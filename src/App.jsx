@@ -12,7 +12,7 @@ function App() {
   const [theme, setTheme] = useState(!true)
 
   return (
-    <div className={`${theme ? 'bg-tertiary text-black' : 'bg-black text-secondary'} App pb-5 h-screen w-screen`}>
+    <div className={`${theme ? 'bg-tertiary text-black' : 'bg-black text-secondary'} transition ease-in delay-150 App pb-5 h-screen w-screen`}>
       <div className='flex h-screen w-screen pb-5'>
           <Sidebar visible={showBar} display={theme} setDisplay={setTheme} />
         <div className='w-screen'>

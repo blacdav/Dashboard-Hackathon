@@ -8,7 +8,7 @@ const Header = ({visible, setVisible, display}) => {
   
   return (
     <>
-    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} border-b border-light h-[10%] grid items-center`}>
+    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in delay-150 border-b border-light h-[10%] grid items-center`}>
       <div className='flex justify-between bg-blue-400 items-center p-4'>
         <div className='flex justify-between'>
           <img src={icon} alt="..." className={`flex lg:hidden w-8 mr-2`}/>

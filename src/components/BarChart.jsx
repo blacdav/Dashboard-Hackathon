@@ -7,7 +7,7 @@ const BarChart = ({display}) => {
   const [select, setSelect] =  useState('');
 
   return (
-    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} border border-light mx-5 lg:mr-0 mt-5 rounded-lg w-auto h-auto`}>
+    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in delay-150 border border-light mx-5 lg:mr-0 mt-5 rounded-lg w-auto h-auto`}>
         <div className='flex justify-between p-2 lg:px-5 lg:pt-5'>
             <h1 className='text-lg lg:2xs font-semibold'>Sales Trends</h1>
             <div className='flex text-2xs'>

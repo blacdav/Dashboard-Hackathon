@@ -16,29 +16,34 @@ const Sidebar = ({ visible, display, setDisplay }) => {
   return (
     <>
     <div
-      className={`${visible ? "hidden lg:flex" : ""} ${display ? 'bg-tertiary text-black' : 'bg-black text-tertiary'} flex flex-col w-14 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute lg:relative bottom-0`}
-      id="togglebar"
+      className={`${visible ? "hidden lg:flex" : "transition ease-in delay-150 duration-1000"} ${display ? 'bg-tertiary text-black transition ease-in delay-150' : 'bg-black text-tertiary'} flex flex-col w-1/2 lg:w-16 min-h-[90%] border-r border-light justify-between z-30 items-start absolute lg:relative bottom-0`}
     >
-      <div className="flex flex-col w-full gap-3 items-end mt-1 lg:mt-0">
+      <div className="flex flex-col w-full gap-3 items-end pl-5 lg:pl-0 mt-1 lg:mt-0">
         <img src={icon} alt="..." className="pt-5 mr-2 hidden lg:flex" />
         <ul className="flex flex-col items-center justify-center gap-3 cursor-pointer w-full">
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-2 lg:justify-center hover:border-primary hover:text-primary">
             <img src={dashboard} alt="..." width={40} className="h-8 w-8" />
+            <span className="flex lg:hidden">Dashboard</span>
           </li>
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
-            <img src={scaleup} alt="..." width={40} className="h-5 w-5" />
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-3 lg:justify-center hover:border-primary hover:text-primary">
+            <img src={scaleup} alt="..." width={40} className="h-5 w-5 mx-1" />
+            <span className="flex lg:hidden">Sales</span>
           </li>
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
-            <img src={profile} alt="..." width={40} className="h-5 w-5" />
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-3 lg:justify-center hover:border-primary hover:text-primary">
+            <img src={profile} alt="..." width={40} className="h-5 w-5 mx-1" />
+            <span className="flex lg:hidden">Customers</span>
           </li>
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-2 lg:justify-center hover:border-primary hover:text-primary">
             <img src={box} alt="..." width={40} className="h-8 w-8" />
+            <span className="flex lg:hidden">Products</span>
           </li>
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
-            <img src={disc} alt="..." width={40} className="h-5 w-5" />
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-3 lg:justify-center hover:border-primary hover:text-primary">
+            <img src={disc} alt="..." width={40} className="h-5 w-5 mx-1" />
+            <span className="flex lg:hidden">Discounts</span>
           </li>
-          <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
-            <img src={info} alt="..." width={40} className="h-5 w-5" />
+          <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-3 lg:justify-center hover:border-primary hover:text-primary">
+            <img src={info} alt="..." width={40} className="h-5 w-5 mx-1" />
+            <span className="flex lg:hidden">Information</span>
           </li>
         </ul>
         <ul className={`${display ? 'bg-light' : 'bg-dark'} justify-center p-1 w-fit mr-2 rounded-full grid gap-3 cursor-pointer`}>
@@ -54,15 +59,18 @@ const Sidebar = ({ visible, display, setDisplay }) => {
           </li>
         </ul>
       </div>
-      <ul className="flex flex-col gap-3 items-center lg:mb-3 cursor-pointer w-full">
-        <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
-          <img src={login} alt="..." width={40} className="w-5 h-5" />
+      <ul className="flex flex-col gap-3 pl-5 lg:pl-0 items-center lg:mb-3 cursor-pointer w-full">
+        <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-3 lg:justify-center hover:border-primary">
+          <img src={login} alt="..." width={40} className="w-5 h-5 mx-1" />
+          <span className="flex lg:hidden">Upgrade</span>
         </li>
-        <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
+        <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-2 lg:justify-center hover:border-primary">
           <img src={setting} alt="..." width={40} className="w-8 h-8" />
+          <span className="flex lg:hidden">Settings</span>
         </li>
-        <li className="w-full items-center hover:border-r-4 h-8 flex justify-center hover:border-primary">
+        <li className="w-full items-center hover:border-r-4 h-8 flex justify-start gap-2 lg:justify-center hover:border-primary">
           <img src={logout} alt="..." width={40} className="w-8 h-8" />
+          <span className="flex lg:hidden">Logout</span>
         </li>
       </ul>
     </div>

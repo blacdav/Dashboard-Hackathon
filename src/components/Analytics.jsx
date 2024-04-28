@@ -4,11 +4,11 @@ import { Analytic } from '../Data'
 const Analytics = ({display}) => {
   return (
     <div className=''>
-      <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} grid grid-cols-1 md:grid-cols-2 gap-3 my-0 lg:my-5 -mr-5 lg:mr-5 ml-5 lg:ml-0`}>
+      <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in delay-150 grid grid-cols-1 md:grid-cols-2 gap-3 my-0 lg:my-5 -mr-5 lg:mr-5 ml-5 lg:ml-0`}>
         {
           Analytic.map((index) => {
             return(
-              <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} flex flex-col justify-between border border-light p-5 lg:p-2 rounded-lg h-44 lg:h-36`} key={index.id}>
+              <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in hover:scale-125 delay-150 flex flex-col justify-between border border-light p-5 lg:p-2 rounded-lg h-44 lg:h-36`} key={index.id}>
                 <div className='flex justify-between'>
                   <img src={index.icon} alt="..." />
                   <img src={index.img} alt="..." />

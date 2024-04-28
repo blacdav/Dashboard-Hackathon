@@ -3,7 +3,7 @@ import { Users } from '../Data'
 
 const LastOrders = ({display}) => {
   return (
-    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} p-5 border border-light mx-5 lg:mr-0 mb-0 lg:mb-5 rounded-lg`}>
+    <div className={`${display ? 'bg-tertiary' : 'bg-black text-tertiary'} transition ease-in delay-150 p-5 border border-light mx-5 lg:mr-0 mb-0 lg:mb-5 rounded-lg`}>
       <div>
         <div className='flex justify-between'>
             <h1 className='text-xs lg:text-lg font-semibold'>Last Orders</h1>
